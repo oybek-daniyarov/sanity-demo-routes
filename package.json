@@ -4,9 +4,9 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "format": "npx prettier --write . --ignore-path .gitignore",
+    "format": "pnpm prettier --write . --ignore-path .gitignore",
     "lint": "next lint .",
-    "lint:fix": "npm run format && npm run lint -- --fix",
+    "lint:fix": "pnpm run format && pnpm run lint -- --fix",
     "start": "next start",
     "type-check": "tsc --noEmit"
   },
@@ -26,6 +26,7 @@
     "@tailwindcss/typography": "0.5.15",
     "classnames": "2.5.1",
     "date-fns": "3.6.0",
+    "groqd": "^0.15.12",
     "next": "14.2.13",
     "next-sanity": "9.5.0",
     "react": "18.3.1",
@@ -34,7 +35,8 @@
     "sanity": "3.58.0",
     "sanity-plugin-asset-source-unsplash": "3.0.1",
     "server-only": "0.0.1",
-    "styled-components": "6.1.13"
+    "styled-components": "6.1.13",
+    "swr": "^2.2.5"
   },
   "devDependencies": {
     "@types/react": "18.3.9",
